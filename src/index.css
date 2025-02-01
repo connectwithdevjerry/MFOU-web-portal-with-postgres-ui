@@ -1,0 +1,592 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+
+.parcelLocate {
+  background-image: url("../src/assets/cameroon.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+/* block */
+.block-search {
+  background-image: url("../src/assets/237.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 81vh;
+  h1 {
+    padding: 10px;
+  }
+}
+
+.map-wrapper {
+  position: relative;
+  height: 100vh;
+}
+
+.loading {
+  width: 100%;
+  height: 81vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(88, 158, 224);
+}
+
+.login-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../src/assets/mountain.jpg");
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column !important;
+  width: 100%;
+  justify-content: center;
+}
+
+.filterInput {
+  height: auto;
+  width: auto;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 10px;
+  align-items: center;
+}
+
+.filter-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  background-color: #fff;
+  color: #000 !important;
+  bottom: 0;
+  right: 0;
+  border-radius: 20px;
+  padding: 20px;
+  width: 200px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #000;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+}
+
+/* search */
+body {
+  background-image: url(parcel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.search-select {
+  padding: 10px 20px;
+}
+
+.search-description {
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 0 auto;
+  background: rgba(1, 1, 1, 0.5);
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.td,
+.th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.tr {
+  background-color: rgb(88, 158, 224);
+}
+
+/* me.css */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(hill.jpg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  /* background-size: cover; */
+  background-size: 300%;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-column {
+  width: 50%;
+  padding: 20px;
+  background-color: rgb(88, 158, 224);
+  border: 1px solid #ddd;
+}
+
+.right-column {
+  width: 50%;
+  padding: 20px;
+  background-color: rgb(88, 158, 224);
+  border: 1px solid #ddd;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* contact */
+body {
+  background-image: url(europe.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* contact css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(car.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+/* 
+header {
+    background-color: rgb(88, 158, 224);
+    color: black;
+    padding: 10px;
+    text-align: center;
+}  */
+
+.my-search-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 70px; */
+}
+
+#contact-form {
+  background-color: rgb(88, 158, 224);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #555;
+}
+
+button[type="search"] {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="search"]:hover {
+  background-color: #555;
+}
+.me button {
+  background-color: rgb(88, 158, 224);
+  margin: 200px;
+  /* padding: 200px; */
+}
+.me button a {
+  background-color: rgb(88, 158, 224);
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 0;
+}
+
+footer {
+  /* background-color: #333; */
+  color: black;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+h1 {
+  text-align: center;
+  color: white;
+}
+p {
+  text-align: center;
+}
+footer p a {
+  text-decoration: none;
+}
+
+.my-button {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+nav {
+  padding: 0 15px;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+}
+.navbar-one {
+  background-color: rgb(88, 158, 224);
+  color: black;
+  cursor: pointer;
+}
+
+span {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  display: inline-block;
+}
+.navbar-second {
+  background-color: grey;
+  height: 40px;
+  /* overflow: auto; */
+  padding-bottom: 10px;
+}
+li {
+  list-style: none;
+}
+.navbar-second a {
+  float: left;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* style css.navbar */
+body {
+  background-image: url(./afrigist\ logo.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  /* color: blue; */
+  /* background-color: rgb(128, 128, 248); */
+}
+
+.navbar {
+  background-color: rgb(88, 158, 224);
+  display: flex;
+  justify-content: space-between;
+  padding: 10;
+  margin: 10;
+}
+
+.rounded-pill1 {
+  padding-right: 10px;
+}
+
+button {
+  color: rgb(88, 158, 224);
+}
+
+nav {
+  background-color: rgb(88, 158, 224);
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 02px;
+  padding: 0;
+  /* background-color: white; */
+}
+
+li {
+  float: left;
+  margin: 2px;
+  text-align: center;
+}
+
+li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin: 10px;
+}
+li a :hover {
+  background-color: gray;
+}
+
+.me {
+  /* padding-top: 250px; */
+  text-align: center;
+  /* background-image: url(IMG-20240724-WA0021\ -\ Copy.jpg); */
+  background-color: rgb(88, 158, 224);
+}
+
+.me button {
+  background-color: rgb(88, 158, 224);
+}
+.me button a {
+  background-color: rgb(88, 158, 224);
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 0;
+}
+footer p {
+  /* margin-top: 100px; */
+  /* margin-bottom: 50px; */
+  text-align: center;
+  /* padding: 150px; */
+  color: black;
+}
+
+h1 h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* .container{
+    background-color: #fff;
+    width: 400px;
+    padding: 40px;
+    border-radius: 8px; */
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  padding: 10px;
+  background-color: #fff;
+  color: aqua;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 2px;
+}
+
+#login-form {
+  background-color: rgb(88, 158, 224);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 300px !important;
+}
+
+.reg-wrapper {
+  font-family: Arial, sans-serif;
+  background-image: url("../src/assets/hill.jpg");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  height: 100vh;
+  padding: 0;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.reg-container {
+  width: 80%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-top: 0;
+}
+
+.reg-left-column {
+  width: 50%;
+  padding: 20px;
+  background-color: rgb(88, 158, 224);
+  border: 1px solid #ddd;
+}
+
+.reg-right-column {
+  width: 50%;
+  padding: 20px;
+  background-color: rgb(88, 158, 224);
+  border: 1px solid #ddd;
+}
+
+.reg-h2 {
+  margin-top: 0;
+}
+
+.reg-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-text,
+.email-input,
+.pass-input,
+.radio-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.radio-input {
+  width: fit-content;
+  height: auto;
+}
+
+.submit-input {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-input:hover {
+  background-color: #3e8e41;
+}
