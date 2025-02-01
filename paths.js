@@ -7,7 +7,8 @@ export const MY_ROUTES = {
   REGISTER: "/register",
 };
 
-const localhost = "http://localhost:5000/spatial";
+// const localhost = "http://localhost:5000/spatial";
+const localhost = "https://mfou-web-portal-express.onrender.com/spatial";
 
 export const ENDPOINTS = {
   GETBLOCKS: `${localhost}/blocks`,
