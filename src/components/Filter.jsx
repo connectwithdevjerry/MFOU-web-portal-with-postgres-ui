@@ -164,6 +164,57 @@ const Filter = ({
             />
             <label htmlFor="residential">Residential</label>
           </div>
+          <div className="checkbox-wrapper">
+            <input
+              className="filterInput"
+              type="radio"
+              id="institutional"
+              name="condition"
+              value="institutional"
+              checked={showFilter.condition === "institutional"}
+              onChange={(e) =>
+                setShowFilter({
+                  ...showFilter,
+                  condition: e.target.value,
+                })
+              }
+            />
+            <label htmlFor="institutional">Institutional</label>
+          </div>
+          <div className="checkbox-wrapper">
+            <input
+              className="filterInput"
+              type="radio"
+              id="transportation"
+              name="condition"
+              value="transportation"
+              checked={showFilter.condition === "transportation"}
+              onChange={(e) =>
+                setShowFilter({
+                  ...showFilter,
+                  condition: e.target.value,
+                })
+              }
+            />
+            <label htmlFor="transportation">Transportation</label>
+          </div>
+          <div className="checkbox-wrapper">
+            <input
+              className="filterInput"
+              type="radio"
+              id="public"
+              name="condition"
+              value="public"
+              checked={showFilter.condition === "public"}
+              onChange={(e) =>
+                setShowFilter({
+                  ...showFilter,
+                  condition: e.target.value,
+                })
+              }
+            />
+            <label htmlFor="public">Public Space</label>
+          </div>
           <div
             style={{
               width: "100%",

@@ -1,8 +1,11 @@
+import { Navbar } from "../components";
+
 const Contact = () => {
   return (
-    <div className="container">
-      <main>
-        <form id="contact-form">
+    <div className="login-container">
+      <Navbar />
+      <main className="container login-wrapper">
+        <form id="login-form">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
           <label htmlFor="email">Email:</label>

@@ -6,7 +6,7 @@ import { MY_ROUTES } from "../../paths";
 const Navbar = () => {
   return (
     <header>
-      <nav className="navbar-one flex">
+      <nav className="navbar-one flex nav-padding">
         <div className="left flex">
           <div className="img">
             <img src={logo} alt="logo" height="80px" width="70px" />
@@ -18,11 +18,10 @@ const Navbar = () => {
             MFou MUNICIPALITY WEB PORTAL
           </h1>
           <p>
-            Land Infomation System for MFou Municipality Central Region Of
-            Cameroon
+            Land Infomation System for MFou Municipality Centre Region, Cameroon
           </p>
         </div>
-        <p>-By Diom Jasper Yam</p>
+        <p>Diom Jasper Yam</p>
 
         <div className="right flex">
           <div className="img">
@@ -43,7 +42,7 @@ const Navbar = () => {
             <Link to={MY_ROUTES.MAP}>PARCEL LOCATION</Link>
           </li>
           <li>
-            <Link to={""}>CONTACT US</Link>
+            <Link to={MY_ROUTES.CONTACT}>CONTACT US</Link>
           </li>
           <li>
             {" "}
