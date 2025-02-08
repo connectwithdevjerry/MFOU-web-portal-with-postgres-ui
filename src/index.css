@@ -15,7 +15,7 @@
 
 /* block */
 .block-search {
-  background-image: url("../src/assets/237.jpg");
+  background-image: url("../src/assets/europe.jpeg");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -209,7 +209,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 70px; */
+  margin-bottom: 70px;
+  flex-direction: column;
 }
 
 #contact-form {

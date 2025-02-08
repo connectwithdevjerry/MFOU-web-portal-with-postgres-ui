@@ -14,16 +14,16 @@ const Navbar = () => {
         </div>
 
         <div>
-          <h1 style={{ margin: "0", fontSize: "30px" }}>
+          <h1 style={{ margin: "0", fontSize: "40px" }}>
             MFou MUNICIPALITY WEB PORTAL
           </h1>
           <p>
             Land Infomation System for MFou Municipality Centre Region, Cameroon
           </p>
         </div>
-        <p>Diom Jasper Yam</p>
 
         <div className="right flex">
+          <p style={{paddingRight: "10px"}}>Diom Jasper Yam</p>
           <div className="img">
             <img src={me} alt="me" height="90px" width="70px" />
           </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
       <nav className="navbar-second flex-home">
         <ul className="flex justify-center">
           <li>
-            <Link to={""}>HOME</Link>
+            <Link to={MY_ROUTES.HOME}>HOME</Link>
           </li>
           <li>
             <Link to={MY_ROUTES.SEARCH}>SEARCH</Link>

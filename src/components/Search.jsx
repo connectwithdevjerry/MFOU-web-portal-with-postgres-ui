@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { ENDPOINTS } from "../../paths";
+import { ENDPOINTS, MY_ROUTES } from "../../paths";
 import axios from "axios";
 import { utmToWGS84 } from "../utilFunctions";
 import { Link } from "react-router";
@@ -13,6 +13,8 @@ const Search = () => {
     blockNumber: "",
     plotNumber: "",
   });
+
+  const [disableSearch, setDisableSearch] = useState(false);
 
   useEffect(() => {
     axios
@@ -84,6 +86,7 @@ const Search = () => {
   console.log({ plots });
 
   const handleSearch = () => {
+    setDisableSearch(true);
     axios
       .get(GETPLOTSEARCH, { params: { ...selectedOptions } })
       .then((response) => {
@@ -94,6 +97,7 @@ const Search = () => {
         if (error.status === 404) {
           alert("No plot found!");
         }
+        setDisableSearch(false);
       });
   };
 
@@ -103,7 +107,7 @@ const Search = () => {
   return (
     <div className="search-wrapper">
       <h1 className="search-description">
-        {`Block ${selectedOptions.blockNumber} plot ${selectedOptions.plotNumber}
+        {`Block ${selectedOptions.blockNumber} / plot ${selectedOptions.plotNumber}
         information`}
       </h1>
       <div>
@@ -119,6 +123,7 @@ const Search = () => {
                       blockNumber: e.target.value,
                     })
                   }
+                  min={1}
                   type="number"
                   list="blocksRef"
                 />
@@ -139,6 +144,7 @@ const Search = () => {
                     plotNumber: e.target.value,
                   })
                 }
+                min={1}
                 list="plotsRef"
               />
               <datalist id="plotsRef" style={{ height: "50vh" }}>
@@ -148,19 +154,25 @@ const Search = () => {
               </datalist>
             </div>
           </div>
-          <button type="submit" onClick={handleSearch}>
+          <button type="submit" onClick={handleSearch} disabled={disableSearch}>
             Search
           </button>
         </div>
         <table className="table">
           <tr className="tr">
-            <th className="th">Block Number</th>
-            <th className="th">Plot Number</th>
+            <th className="th">Block No</th>
+            <th className="th">Plot No</th>
             <th className="th">Owner</th>
-            <th className="th">ccp_number</th>
-            <th className="th">land_use</th>
-            <th className="th">date_registered</th>
-            <th className="th">surveyor</th>
+            <th className="th">ccp no</th>
+            <th className="th">Land Use</th>
+            <th className="th">Date Reg</th>
+            <th className="th">Surveyor</th>
+            <th className="th">Gender</th>
+            <th className="th">Land Rate</th>
+            <th className="th">Land Value</th>
+            <th className="th">Block Name</th>
+            <th className="th">Land Tenure</th>
+            <th className="th">Place</th>
           </tr>
           {/* {selectedOptions.blockNumber &&
             selectedOptions.plot &&
@@ -187,10 +199,31 @@ const Search = () => {
             <td value={searchResult.id} className="td">
               {searchResult.surveyor}
             </td>
+            <td value={searchResult.id} className="td">
+              {searchResult.gender}
+            </td>
+            <td value={searchResult.id} className="td">
+              {searchResult.land_rate}
+            </td>
+            <td value={searchResult.id} className="td">
+              {searchResult.land_value}
+            </td>
+            <td value={searchResult.id} className="td">
+              {searchResult.block_name}
+            </td>
+            <td value={searchResult.id} className="td">
+              {searchResult.land_tenure}
+            </td>
+            <td value={searchResult.id} className="td">
+              {searchResult.place}
+            </td>
           </tr>
           {/* ))} */}
         </table>
-        <Link style={{ color: "blue", fontWeight: 700 }} to={""}>
+        <Link
+          style={{ color: "#fff", fontStyle: "italic", fontWeight: 400 }}
+          to={MY_ROUTES.MAP}
+        >
           Check parcel location on Map
         </Link>
       </div>
