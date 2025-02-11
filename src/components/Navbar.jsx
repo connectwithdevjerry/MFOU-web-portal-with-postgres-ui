@@ -9,7 +9,8 @@ const Navbar = () => {
       <nav className="navbar-one flex nav-padding">
         <div className="left flex">
           <div className="img">
-            <img src={logo} alt="logo" height="80px" width="70px" />
+            {/* <img src={logo} alt="logo" height="80px" width="70px" /> */}
+            <img src={"logo"} alt="logo" height="80px" width="70px" />
           </div>
         </div>
 
