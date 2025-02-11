@@ -9,8 +9,7 @@ const Navbar = () => {
       <nav className="navbar-one flex nav-padding">
         <div className="left flex">
           <div className="img">
-            {/* <img src={logo} alt="logo" height="80px" width="70px" /> */}
-            <img src={"logo"} alt="logo" height="80px" width="70px" />
+            <img src={logo} alt="logo" height="80px" width="70px" />
           </div>
         </div>
 
@@ -24,11 +23,9 @@ const Navbar = () => {
         </div>
 
         <div className="right flex">
-          {/* <p style={{paddingRight: "10px"}}>Diom Jasper Yam</p> */}
-          <p style={{paddingRight: "10px"}}>Hi</p>
+          <p style={{paddingRight: "10px"}}>Diom Jasper Yam</p>
           <div className="img">
-            {/* <img src={me} alt="my picture" height="90px" width="70px" /> */}
-            <img src={`${me}s`} alt="my picture" height="90px" width="70px" />
+            <img src={me} alt="my picture" height="90px" width="70px" />
           </div>
         </div>
       </nav>
