@@ -23,9 +23,11 @@ const Navbar = () => {
         </div>
 
         <div className="right flex">
-          <p style={{paddingRight: "10px"}}>Diom Jasper Yam</p>
+          {/* <p style={{paddingRight: "10px"}}>Diom Jasper Yam</p> */}
+          <p style={{paddingRight: "10px"}}>Hi</p>
           <div className="img">
-            <img src={me} alt="me" height="90px" width="70px" />
+            {/* <img src={me} alt="my picture" height="90px" width="70px" /> */}
+            <img src={`${me}s`} alt="my picture" height="90px" width="70px" />
           </div>
         </div>
       </nav>
