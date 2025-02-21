@@ -170,8 +170,8 @@ const Filter = ({
               type="radio"
               id="institutional"
               name="condition"
-              value="institutional"
-              checked={showFilter.condition === "institutional"}
+              value="Institution"
+              checked={showFilter.condition === "Institution"}
               onChange={(e) =>
                 setShowFilter({
                   ...showFilter,
@@ -187,8 +187,8 @@ const Filter = ({
               type="radio"
               id="transportation"
               name="condition"
-              value="transportation"
-              checked={showFilter.condition === "transportation"}
+              value="Transportat"
+              checked={showFilter.condition === "Transportat"}
               onChange={(e) =>
                 setShowFilter({
                   ...showFilter,
@@ -196,7 +196,7 @@ const Filter = ({
                 })
               }
             />
-            <label htmlFor="transportation">Transportation</label>
+            <label htmlFor="transportation">Transportational</label>
           </div>
           <div className="checkbox-wrapper">
             <input
@@ -204,8 +204,8 @@ const Filter = ({
               type="radio"
               id="public"
               name="condition"
-              value="public"
-              checked={showFilter.condition === "public"}
+              value="Public Spac"
+              checked={showFilter.condition === "Public Spac"}
               onChange={(e) =>
                 setShowFilter({
                   ...showFilter,

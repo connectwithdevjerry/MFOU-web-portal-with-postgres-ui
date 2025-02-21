@@ -204,7 +204,7 @@ const MapSection = ({ showFilter, setShowFilterBox, searchResult }) => {
       {showFilter.condition === "unoccupied" &&
         plots.length > 0 &&
         plots
-          .filter((plot) => plot.plot_owner == null || plot.plot_owner == "")
+          .filter((plot) => plot.Plot_owner == "Null" || plot.plot_owner == "")
           .map((plot, ind) => (
             <Polygon
               key={`${plot.id}-${ind}`}
