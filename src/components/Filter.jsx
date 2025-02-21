@@ -110,7 +110,7 @@ const Filter = ({
                 })
               }
             />
-            <label htmlFor="commercial">All</label>
+            <label htmlFor="all">All</label>
           </div>
           <div className="checkbox-wrapper">
             <input
