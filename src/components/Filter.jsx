@@ -170,8 +170,8 @@ const Filter = ({
               type="radio"
               id="institutional"
               name="condition"
-              value="Institution"
-              checked={showFilter.condition === "Institution"}
+              value="institution"
+              checked={showFilter.condition === "institution"}
               onChange={(e) =>
                 setShowFilter({
                   ...showFilter,
@@ -187,8 +187,8 @@ const Filter = ({
               type="radio"
               id="transportation"
               name="condition"
-              value="Transportat"
-              checked={showFilter.condition === "Transportat"}
+              value="transportat"
+              checked={showFilter.condition === "transportat"}
               onChange={(e) =>
                 setShowFilter({
                   ...showFilter,
@@ -204,8 +204,8 @@ const Filter = ({
               type="radio"
               id="public"
               name="condition"
-              value="Public Spac"
-              checked={showFilter.condition === "Public Spac"}
+              value="public spac"
+              checked={showFilter.condition === "public spac"}
               onChange={(e) =>
                 setShowFilter({
                   ...showFilter,
