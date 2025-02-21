@@ -203,16 +203,16 @@ const Search = () => {
               {searchResult.gender}
             </td>
             <td value={searchResult.id} className="td">
-              {searchResult.land_rate}
+              {searchResult.land_Rate}
             </td>
             <td value={searchResult.id} className="td">
-              {searchResult.land_value}
+              {searchResult.land_Value}
             </td>
             <td value={searchResult.id} className="td">
-              {searchResult.block_name}
+              {searchResult.Block_name}
             </td>
             <td value={searchResult.id} className="td">
-              {searchResult.land_tenure}
+              {searchResult.land_tenur}
             </td>
             <td value={searchResult.id} className="td">
               {searchResult.place}
