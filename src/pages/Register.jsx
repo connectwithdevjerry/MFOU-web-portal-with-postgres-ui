@@ -71,7 +71,7 @@ const Register = () => {
         <div className="reg-right-column">
           <footer>
             <p>
-              By clicking Sign up button you agree to out terms and condition{" "}
+              By clicking Sign up button you agree to all terms and condition{" "}
               <br />
               <a href="#">Terms and Condition</a>
               and <Link to={""}>Policy Privacy</Link>{" "}

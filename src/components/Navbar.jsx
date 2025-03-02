@@ -3,7 +3,7 @@ import logo from "../assets/afrigist_logo.jpg";
 import me from "../assets/jas.jpg";
 import { MY_ROUTES } from "../../paths";
 
-const Navbar = () => {
+const Navbar = ({ showDetails, setShowDetails }) => {
   return (
     <header>
       <nav className="navbar-one flex nav-padding">
@@ -23,7 +23,12 @@ const Navbar = () => {
         </div>
 
         <div className="right flex">
-          <p style={{paddingRight: "10px"}}>Diom Jasper Yam</p>
+          <p
+            onClick={() => setShowDetails(!showDetails)}
+            style={{ paddingRight: "10px" }}
+          >
+            Diom Jasper Yam
+          </p>
           <div className="img">
             <img src={me} alt="my picture" height="90px" width="70px" />
           </div>
@@ -35,18 +40,31 @@ const Navbar = () => {
           <li>
             <Link to={MY_ROUTES.HOME}>HOME</Link>
           </li>
-          <li>
+          <li className="tooltip">
+            <span className="tooltip-text">
+              Search for non-spatial attributes. It is achieved using <br />
+              block number and plot number used to print C-of-O
+            </span>
             <Link to={MY_ROUTES.SEARCH}>SEARCH</Link>
           </li>
-          <li>
+          <li className="tooltip">
+            <span className="tooltip-text">
+              Used for parcel identification and a different Land-Use in the
+              Municipality
+            </span>
             <Link to={MY_ROUTES.MAP}>PARCEL LOCATION</Link>
           </li>
-          <li>
+          <li className="tooltip">
+            <span className="tooltip-text">
+              Used to report back for any inquiry!
+            </span>
             <Link to={MY_ROUTES.CONTACT}>CONTACT US</Link>
           </li>
           <li>
-            {" "}
             <Link to={MY_ROUTES.LOGIN}>LOGIN </Link>
+          </li>
+          <li>
+            <Link to={MY_ROUTES.ABOUT}>ABOUT </Link>
           </li>
         </ul>
       </nav>

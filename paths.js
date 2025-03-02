@@ -5,6 +5,7 @@ export const MY_ROUTES = {
   CONTACT: "/contact",
   LOGIN: "/login",
   REGISTER: "/register",
+  ABOUT: "/about",
 };
 
 // const localhost = "http://localhost:5000/spatial";
