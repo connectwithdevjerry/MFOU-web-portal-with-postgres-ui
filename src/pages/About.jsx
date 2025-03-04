@@ -2,27 +2,26 @@ import { Navbar } from "../components";
 
 const About = () => {
   return (
-    <div
-      className="map-wrapper cus"
-    >
+    <div className="map-wrapper cus">
       <Navbar />
       <main className="container mx-auto px-6 py-12 mt-16 flex col-about">
         <section className="text-center">
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-6">
+          <h2 className="text-4xl font-extrabold text-white mb-6">
             About My Project
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            This project’s aim therefore is to provide an automated Land
-            Information System that integrates both spatial and non-spatial
-            attributes accessed through a web portal. Real-time checks on the
-            position of the land parcel on the ground will also be provided for
-            through an algorithm that converts parcel boundary coordinates into
-            KML files capable of providing actual ground location through ArcGIS satellite imagery.
+            This project was carried out by Sur. DIOM Jasper YAM CARTO/TD/42301
+            under the supervision of Mr. Paul B. Borisade at the African
+            Regional Institute for Geospatial Information Sciences and
+            Technology (AFRIGIST), Ile-Ife, Nigeria. This work is submitted as a
+            partial fulfillment of the requirements for the award of a
+            Technologist Diploma in Geo-information Production and Management
+            (GPM).
           </p>
         </section>
 
         <section className="text-center mt-10">
-          <h2 className="text-4xl font-extrabold text-gray-900 mb-6">
+          <h2 className="text-4xl font-extrabold text-white mb-6">
             Project Objectives
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
