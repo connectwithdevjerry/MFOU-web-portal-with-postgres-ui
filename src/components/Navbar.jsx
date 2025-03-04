@@ -2,8 +2,10 @@ import { Link, Links } from "react-router-dom";
 import logo from "../assets/afrigist_logo.jpg";
 import me from "../assets/jas.jpg";
 import { MY_ROUTES } from "../../paths";
+import { useState } from "react";
 
 const Navbar = ({ showDetails, setShowDetails }) => {
+  const [isAuth, setIsAuth] = useState(false);
   return (
     <header>
       <nav className="navbar-one flex nav-padding">
@@ -61,10 +63,10 @@ const Navbar = ({ showDetails, setShowDetails }) => {
             <Link to={MY_ROUTES.CONTACT}>CONTACT US</Link>
           </li>
           <li>
-            <Link to={MY_ROUTES.LOGIN}>LOGIN </Link>
+            <Link to={MY_ROUTES.ABOUT}>ABOUT </Link>
           </li>
           <li>
-            <Link to={MY_ROUTES.ABOUT}>ABOUT </Link>
+            <Link to={MY_ROUTES.LOGIN}>{!isAuth ? "LOGIN" : "LOGOUT"} </Link>
           </li>
         </ul>
       </nav>

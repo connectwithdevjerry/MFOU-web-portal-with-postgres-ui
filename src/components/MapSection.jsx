@@ -107,7 +107,7 @@ const MapSection = ({ showFilter, setShowFilterBox, searchResult }) => {
     <MapContainer
       center={center}
       zoom={zoom}
-      style={{ height: "81vh", width: "100%", zIndex: 0 }}
+      style={{ height: "82.7vh", width: "100%", zIndex: 0 }}
     >
       <TileLayer attribution={arcgisAttribution} url={arcgisEarthTile} />
 

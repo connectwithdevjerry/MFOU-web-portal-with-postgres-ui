@@ -3,8 +3,13 @@ import { Navbar } from "../components";
 const About = () => {
   return (
     <div className="map-wrapper cus">
-      <Navbar />
-      <main className="container mx-auto px-6 py-12 mt-16 flex col-about">
+      <div style={{ flex: 1 }}>
+        <Navbar />
+      </div>
+      <main
+        className="container mx-auto px-6 py-12 mt-16 flex col-about"
+        style={{ flex: 6 }}
+      >
         <section className="text-center">
           <h2 className="text-4xl font-extrabold text-white mb-6">
             About My Project
