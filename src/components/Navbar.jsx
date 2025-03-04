@@ -9,12 +9,12 @@ const Navbar = ({ showDetails, setShowDetails }) => {
       <nav className="navbar-one flex nav-padding">
         <div className="left flex">
           <div className="img">
-            <img src={logo} alt="logo" height="80px" width="70px" />
+            <img src={logo} alt="logo" width="170px" />
           </div>
         </div>
 
         <div>
-          <h1 style={{ margin: "0", fontSize: "40px" }}>
+          <h1 style={{ margin: "0", fontSize: "40px", fontWeight: 700 }}>
             MFou MUNICIPALITY WEB PORTAL
           </h1>
           <p>
@@ -30,7 +30,7 @@ const Navbar = ({ showDetails, setShowDetails }) => {
             Diom Jasper Yam
           </p>
           <div className="img">
-            <img src={me} alt="my picture" height="90px" width="70px" />
+            <img src={me} alt="my picture" width="60px" />
           </div>
         </div>
       </nav>
