@@ -11,7 +11,7 @@ const Navbar = ({ showDetails, setShowDetails }) => {
       <nav className="navbar-one flex nav-padding">
         <div className="left flex">
           <div className="img">
-            <img src={logo} alt="logo" width="170px" />
+            <img src={logo} alt="logo" style={{ width: "80px", height: "100px" }} />
           </div>
         </div>
 
@@ -32,7 +32,7 @@ const Navbar = ({ showDetails, setShowDetails }) => {
             Diom Jasper Yam
           </p>
           <div className="img">
-            <img src={me} alt="my picture" width="60px" />
+            <img src={me} alt="my picture" style={{ width: "80px", height: "100px" }} />
           </div>
         </div>
       </nav>
