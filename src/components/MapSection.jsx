@@ -22,7 +22,7 @@ const MapSection = ({ showFilter, setShowFilterBox, searchResult }) => {
         // setBlocks(response.data);
         const myPol = response.data.data.map(
           ({ geometry, name, block_numb, id }) => ({
-            coord: geometry.coordinates[0][0],
+            coord: JSON.parse(geometry).coordinates[0][0],
             name,
             block_number: block_numb,
             id,
@@ -46,7 +46,7 @@ const MapSection = ({ showFilter, setShowFilterBox, searchResult }) => {
           ({
             geometry,
             id,
-            Plot_owner,
+            plot_owner,
             land_use,
             surveyor,
             ccp_number,
@@ -56,12 +56,12 @@ const MapSection = ({ showFilter, setShowFilterBox, searchResult }) => {
             place,
             land_tenure,
           }) => ({
-            coord: geometry.coordinates[0][0],
+            coord: JSON.parse(geometry).coordinates[0][0],
             surveyor,
             land_use,
             ccp_number,
             date_registered,
-            plot_owner: Plot_owner,
+            plot_owner,
             block_number,
             id,
             gender,
@@ -75,6 +75,7 @@ const MapSection = ({ showFilter, setShowFilterBox, searchResult }) => {
           coord: utmToWGS84(pol.coord),
         }));
         setPlots(allPlots);
+        console.log("myPol", allPlots);
       })
       .catch((error) => {});
 
@@ -82,7 +83,7 @@ const MapSection = ({ showFilter, setShowFilterBox, searchResult }) => {
       .get(GETBUILDINGS)
       .then((response) => {
         const myBuildings = response.data.data.map(({ geometry, id }) => ({
-          coord: geometry.coordinates[0][0],
+          coord: JSON.parse(geometry).coordinates[0][0],
           id,
         }));
 
@@ -204,7 +205,12 @@ const MapSection = ({ showFilter, setShowFilterBox, searchResult }) => {
       {showFilter.condition === "unoccupied" &&
         plots.length > 0 &&
         plots
-          .filter((plot) => plot.plot_owner == "Null" || plot.plot_owner == "")
+          .filter(
+            (plot) =>
+              plot.plot_owner == "Null" ||
+              plot.plot_owner == undefined ||
+              plot.plot_owner.trim() == ""
+          )
           .map((plot, ind) => (
             <Polygon
               key={`${plot.id}-${ind}`}
@@ -236,7 +242,8 @@ const MapSection = ({ showFilter, setShowFilterBox, searchResult }) => {
         plots
           .filter(
             (plot) =>
-              plot.land_use.toLowerCase().trim() === showFilter.condition
+              plot.land_use.toLowerCase().trim() ===
+              showFilter.condition.toLowerCase()
           )
           .map((plot, ind) => (
             <Polygon

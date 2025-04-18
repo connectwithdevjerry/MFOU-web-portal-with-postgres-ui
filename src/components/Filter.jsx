@@ -170,8 +170,8 @@ const Filter = ({
               type="radio"
               id="institutional"
               name="condition"
-              value="institution"
-              checked={showFilter.condition === "institution"}
+              value="institutional"
+              checked={showFilter.condition === "institutional"}
               onChange={(e) =>
                 setShowFilter({
                   ...showFilter,
@@ -187,8 +187,8 @@ const Filter = ({
               type="radio"
               id="transportation"
               name="condition"
-              value="transportat"
-              checked={showFilter.condition === "transportat"}
+              value="transportation"
+              checked={showFilter.condition === "transportation"}
               onChange={(e) =>
                 setShowFilter({
                   ...showFilter,
@@ -204,8 +204,8 @@ const Filter = ({
               type="radio"
               id="public"
               name="condition"
-              value="public spac"
-              checked={showFilter.condition === "public spac"}
+              value="public space"
+              checked={showFilter.condition === "public space"}
               onChange={(e) =>
                 setShowFilter({
                   ...showFilter,
@@ -214,6 +214,23 @@ const Filter = ({
               }
             />
             <label htmlFor="public">Public Space</label>
+          </div>
+          <div className="checkbox-wrapper">
+            <input
+              className="filterInput"
+              type="radio"
+              id="dumping"
+              name="condition"
+              value="dumping site"
+              checked={showFilter.condition === "dumping site"}
+              onChange={(e) =>
+                setShowFilter({
+                  ...showFilter,
+                  condition: e.target.value,
+                })
+              }
+            />
+            <label htmlFor="dumping">Dumping Site</label>
           </div>
           <div
             style={{
