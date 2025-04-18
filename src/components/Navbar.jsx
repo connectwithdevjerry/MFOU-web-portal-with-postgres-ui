@@ -24,7 +24,7 @@ const Navbar = ({ showDetails, setShowDetails }) => {
           </p>
         </div>
 
-        {/* <div className="right flex">
+        <div className="right flex">
           <p
             onClick={() => setShowDetails(!showDetails)}
             style={{ paddingRight: "10px" }}
@@ -34,7 +34,7 @@ const Navbar = ({ showDetails, setShowDetails }) => {
           <div className="img">
             <img src={me} alt="my picture" style={{ width: "80px", height: "100px" }} />
           </div>
-        </div> */}
+        </div>
       </nav>
 
       <nav className="navbar-second flex-home">
