@@ -23,7 +23,7 @@ const Search = () => {
         // setBlocks(response.data);
         const myPol = response.data.data.map(
           ({ geometry, name, block_numb, id }) => ({
-            coord: geometry.coordinates[0][0],
+            coord: JSON.parse(geometry).coordinates[0][0],
             name,
             block_number: block_numb,
             id,
@@ -59,7 +59,7 @@ const Search = () => {
               place,
               land_tenure,
             }) => ({
-              coord: geometry.coordinates[0][0],
+              coord: JSON.parse(geometry).coordinates[0][0],
               surveyor,
               land_use,
               ccp_number,
@@ -90,7 +90,7 @@ const Search = () => {
     axios
       .get(GETPLOTSEARCH, { params: { ...selectedOptions } })
       .then((response) => {
-        console.log("response.data.data", response.data.data);
+        console.log("response.data.data", response);
         setSearchResult(response.data.data);
       })
       .catch((error) => {
@@ -191,7 +191,7 @@ const Search = () => {
               {searchResult.plot_number}
             </td>
             <td value={searchResult.id} className="td">
-              {searchResult.Plot_owner}
+              {searchResult.plot_owner}
             </td>
             <td value={searchResult.id} className="td">
               {searchResult.gender}
