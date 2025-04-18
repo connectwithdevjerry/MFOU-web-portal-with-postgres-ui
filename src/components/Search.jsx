@@ -160,17 +160,20 @@ const Search = () => {
         </div>
         <table className="table">
           <tr className="tr">
+            <th className="th">Block Name</th>
             <th className="th">Block No</th>
             <th className="th">Plot No</th>
             <th className="th">Owner</th>
+            <th className="th">Gender</th>
+            <th className="th">
+              Area (m<sup>2</sup>){" "}
+            </th>
             <th className="th">ccp no</th>
             <th className="th">Land Use</th>
             <th className="th">Date Reg</th>
             <th className="th">Surveyor</th>
-            <th className="th">Gender</th>
             <th className="th">Land Rate</th>
             <th className="th">Land Value</th>
-            <th className="th">Block Name</th>
             <th className="th">Land Tenure</th>
             <th className="th">Place</th>
           </tr>
@@ -179,6 +182,9 @@ const Search = () => {
             searchResult.map((plot) => ( */}
           <tr key={searchResult.id} className="tr">
             <td value={searchResult.id} className="td">
+              {searchResult.Block_name}
+            </td>
+            <td value={searchResult.id} className="td">
               {searchResult.block_number}
             </td>
             <td value={searchResult.id} className="td">
@@ -186,6 +192,12 @@ const Search = () => {
             </td>
             <td value={searchResult.id} className="td">
               {searchResult.Plot_owner}
+            </td>
+            <td value={searchResult.id} className="td">
+              {searchResult.gender}
+            </td>
+            <td value={searchResult.id} className="td">
+              {searchResult.Area}
             </td>
             <td value={searchResult.id} className="td">
               {searchResult.ccp_number}
@@ -200,16 +212,10 @@ const Search = () => {
               {searchResult.surveyor}
             </td>
             <td value={searchResult.id} className="td">
-              {searchResult.gender}
-            </td>
-            <td value={searchResult.id} className="td">
               {searchResult.land_Rate}
             </td>
             <td value={searchResult.id} className="td">
               {searchResult.land_Value}
-            </td>
-            <td value={searchResult.id} className="td">
-              {searchResult.Block_name}
             </td>
             <td value={searchResult.id} className="td">
               {searchResult.land_tenur}
