@@ -31,9 +31,9 @@ const Navbar = ({ showDetails, setShowDetails }) => {
           >
             Diom Jasper Yam
           </p>
-          <div className="img">
+          {/* <div className="img">
             <img src={me} alt="my picture" style={{ width: "80px", height: "100px" }} />
-          </div>
+          </div> */}
         </div>
       </nav>
 
